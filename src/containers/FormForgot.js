@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { login } from "../actions";
+import { reset } from "../actions";
 
 const validate = values => {
   const errors = {};
@@ -13,16 +13,12 @@ const validate = values => {
     errors.email = "Invalid email address.";
   }
 
-  if (!values.password) {
-    errors.password = "Please enter a password.";
-  }
-
   return errors;
 };
 
-class FormLogin extends Component {
+class FormForgot extends Component {
   handleFormSubmit = values => {
-    this.props.login(values);
+    this.props.reset(values);
   };
 
   renderField = ({ input, label, type, meta: { touched, error } }) => (
@@ -51,20 +47,19 @@ class FormLogin extends Component {
             component={this.renderField}
             label="Email"
           />
-          <Field
-            name="password"
-            type="password"
-            component={this.renderField}
-            label="Password"
-          />
-          <div className="mt-5">
-            <Link className="deep-blue par-link" to="/forgot-password">
-              Forgot your password?
+          <div className="d-inline">
+            <Link to="/">
+              <button className="btn-forgot btn-forgot-inverse d-inline text-uppercase ">
+                Go back
+              </button>
             </Link>
           </div>
-          <div className="text-center">
-            <button action="submit" className="btn-register text-uppercase">
-              Log In
+          <div className="d-inline">
+            <button
+              action="submit"
+              className="btn-forgot btn-register d-inline text-uppercase"
+            >
+              Reset Password
             </button>
           </div>
         </form>
@@ -75,5 +70,5 @@ class FormLogin extends Component {
 
 export default reduxForm({
   validate,
-  form: "loginForm"
-})(connect(null, { login })(FormLogin));
+  form: "forgotForm"
+})(connect(null, { reset })(FormForgot));

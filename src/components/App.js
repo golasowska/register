@@ -16,7 +16,15 @@ class App extends Component {
           <Route component={ScrollToTop} />
           <Switch>
             <Route path={`${process.env.PUBLIC_URL}/login`} component={Login} />
-
+            <Route
+              path={`${process.env.PUBLIC_URL}/forgot-password`}
+              component={Forgot}
+            />
+            <Route path={`${process.env.PUBLIC_URL}/user`} component={User} />
+            <Route
+              path={`${process.env.PUBLIC_URL}/confirmation`}
+              component={Confirmation}
+            />
             <Route exact path="/" component={Register} />
           </Switch>
         </div>

@@ -6,6 +6,14 @@ body {
   background: #e0e0e0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .card-header-size {
   font-size: 1.5rem;
   margin-top: 2rem;
@@ -18,6 +26,21 @@ body {
   margin-left: 3rem;
   margin-right: 3rem;
   font-size: 1rem;
+}
+
+a.par-link {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a.par-link:hover {
+  color: #144e98;
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .welcome {
@@ -99,6 +122,56 @@ body {
   background: #fafafa;
   color: #144e98;
   transition: 0.5s;
+}
+
+.btn-forgot-inverse {
+  background: #fafafa;
+  font-size: 1.25rem;
+  color: #144e98;
+  border: 1px solid #144e98;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 3.125rem;
+  width: 80%;
+  text-decoration: none;
+}
+
+.btn-forgot-inverse a {
+  color: #144e98;
+}
+
+.btn-forgot-inverse:hover {
+  text-decoration: none;
+  background: #144e98;
+  color: #fafafa;
+  transition: 0.5s;
+}
+
+.btn-forgot-inverse:hover a {
+  color: #fafafa;
+  transition: 0.5s;
+}
+
+.btn-forgot.btn-register {
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.btn-forgot-inverse.btn-forgot {
+  width: 35%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.btn-forgot.btn-register-inverse {
+  width: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .has-danger .custom-file-control,

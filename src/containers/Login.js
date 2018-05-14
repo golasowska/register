@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import FormRegister from "./FormRegister";
+import FormLogin from "./FormLogin";
 
 import logo from "../assets/images/bbod_basic.svg";
 
-export default class Register extends Component {
+export default class Login extends Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,17 @@ export default class Register extends Component {
         </div>
         <div className="row  mt-5">
           <div className="col-md-6 reg light-white-bg">
-            <p className="deep-blue card-header-size">Register</p>
-            <FormRegister history={this.props.history} />
+            <p className="deep-blue card-header-size">Log In</p>
+            <FormLogin history={this.props.history} />
           </div>
           <div className="col-md-5 deep-blue-bg log align-self-center">
             <p className="light-white card-par-size">
-              Have already an account?
+              Not a member? Register now!
             </p>
             <div className="text-center">
-              <Link to="/login">
+              <Link to="/">
                 <button className="btn-register-inverse text-uppercase ">
-                  Log In
+                  Register
                 </button>
               </Link>
             </div>

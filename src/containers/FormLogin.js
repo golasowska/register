@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
-import { register } from "../actions";
+import { login } from "../actions";
 
 const validate = values => {
   const errors = {};
@@ -16,20 +16,12 @@ const validate = values => {
     errors.password = "Please enter a password.";
   }
 
-  if (!values.passwordConfirmation) {
-    errors.passwordConfirmation = "Please enter a password confirmation.";
-  }
-
-  if (values.password !== values.passwordConfirmation) {
-    errors.password = "Passwords do not match.";
-  }
-
   return errors;
 };
 
-class FormRegister extends Component {
+class FormLogin extends Component {
   handleFormSubmit = values => {
-    this.props.register(values);
+    this.props.login(values);
   };
 
   renderField = ({ input, label, type, meta: { touched, error } }) => (
@@ -64,15 +56,9 @@ class FormRegister extends Component {
             component={this.renderField}
             label="Password"
           />
-          <Field
-            name="passwordConfirmation"
-            type="password"
-            component={this.renderField}
-            label="Password Confirmation"
-          />
           <div className="text-center">
             <button action="submit" className="btn-register text-uppercase">
-              Register
+              Log In
             </button>
           </div>
         </form>
@@ -83,5 +69,5 @@ class FormRegister extends Component {
 
 export default reduxForm({
   validate,
-  form: "registerForm"
-})(connect(null, { register })(FormRegister));
+  form: "loginForm"
+})(connect(null, { login })(FormLogin));

@@ -3,7 +3,7 @@ body {
   padding: 0;
   /* font-family: sans-serif; */
   font-family: "Roboto", monospace important!;
-  background: #e0e0e0;
+  background: #020d27;
 }
 
 a {
@@ -37,7 +37,7 @@ a.par-link {
 }
 
 a.par-link:hover {
-  color: #144e98;
+  color: #aea2ea;
   opacity: 0.8;
   transition: 0.5s;
   text-decoration: none;
@@ -45,6 +45,7 @@ a.par-link:hover {
 
 .welcome {
   font-size: 2.5rem;
+  color: #fafafa;
 }
 
 /* COLORS */
@@ -54,7 +55,7 @@ a.par-link:hover {
 }
 
 .deep-blue {
-  color: #144e98;
+  color: #aea2ea;
 }
 
 .light-white-bg {
@@ -62,14 +63,14 @@ a.par-link:hover {
 }
 
 .deep-blue-bg {
-  background: #144e98;
+  background: #aea2ea;
 }
 
 .reg,
 .log {
-  -webkit-box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.47);
-  box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.9);
+  box-shadow: 5px 5px 13px -2px rgba(0, 0, 0, 0.9);
 }
 
 .reg {
@@ -82,10 +83,10 @@ a.par-link:hover {
 /* FORM */
 
 .btn-register {
-  background: #144e98;
+  background: #aea2ea;
   font-size: 1.25rem;
   color: #fafafa;
-  border: 1px solid #144e98;
+  border: 1px solid #aea2ea;
   border-radius: 10px;
   padding: 0.5rem;
   text-align: center;
@@ -98,13 +99,13 @@ a.par-link:hover {
 
 .btn-register:hover {
   background: #fafafa;
-  border: 1px solid #144e98;
-  color: #144e98;
+  border: 1px solid #aea2ea;
+  color: #aea2ea;
   transition: 0.5s;
 }
 
 .btn-register-inverse {
-  background: #144e98;
+  background: #aea2ea;
   font-size: 1.25rem;
   color: #fafafa;
   border: 1px solid #fafafa;
@@ -120,15 +121,15 @@ a.par-link:hover {
 
 .btn-register-inverse:hover {
   background: #fafafa;
-  color: #144e98;
+  color: #aea2ea;
   transition: 0.5s;
 }
 
 .btn-forgot-inverse {
   background: #fafafa;
   font-size: 1.25rem;
-  color: #144e98;
-  border: 1px solid #144e98;
+  color: #aea2ea;
+  border: 1px solid #aea2ea;
   border-radius: 10px;
   padding: 0.5rem;
   text-align: center;
@@ -141,12 +142,12 @@ a.par-link:hover {
 }
 
 .btn-forgot-inverse a {
-  color: #144e98;
+  color: #aea2ea;
 }
 
 .btn-forgot-inverse:hover {
   text-decoration: none;
-  background: #144e98;
+  background: #aea2ea;
   color: #fafafa;
   transition: 0.5s;
 }
@@ -180,7 +181,7 @@ a.par-link:hover {
 .is-focused .has-danger .form-control {
   background-image: -webkit-linear-gradient(
       bottom,
-      #144e98 2px,
+      #aea2ea 2px,
       rgba(244, 67, 54, 0) 0
     ),
     -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.26) 1px, transparent 0);
@@ -190,7 +191,7 @@ a.par-link:hover {
       rgba(244, 67, 54, 0) 0
     ),
     -o-linear-gradient(bottom, rgba(0, 0, 0, 0.26) 1px, transparent 0);
-  background-image: linear-gradient(0deg, #144e98 2px, rgba(244, 67, 54, 0) 0),
+  background-image: linear-gradient(0deg, #aea2ea 2px, rgba(244, 67, 54, 0) 0),
     linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
   margin-left: 10%;
   margin-right: 10%;
@@ -203,17 +204,17 @@ a.par-link:hover {
 .is-focused .form-control {
   background-image: -webkit-linear-gradient(
       bottom,
-      #144e98 2px,
+      #aea2ea 2px,
       rgba(0, 150, 136, 0) 0
     ),
     -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.26) 1px, transparent 0);
   background-image: -o-linear-gradient(
       bottom,
-      #144e98 2px,
+      #aea2ea 2px,
       rgba(0, 150, 136, 0) 0
     ),
     -o-linear-gradient(bottom, rgba(0, 0, 0, 0.26) 1px, transparent 0);
-  background-image: linear-gradient(0deg, #144e98 2px, rgba(0, 150, 136, 0) 0),
+  background-image: linear-gradient(0deg, #aea2ea 2px, rgba(0, 150, 136, 0) 0),
     linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
   margin-left: 10%;
   margin-right: 10%;
@@ -221,7 +222,7 @@ a.par-link:hover {
 }
 
 .help-block {
-  color: #df4238;
+  color: #b76a96;
   margin-left: 10%;
   margin-right: 10%;
 }
